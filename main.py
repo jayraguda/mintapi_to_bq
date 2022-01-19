@@ -15,9 +15,9 @@ timestampforpartition = latime
 
 #set globals
 # username, password, and imap password stored in Cloud Run Environment Variables, will use split() method to convert to tuples
-user1 = os.environ.get('user1','Specified Environment Variable Not Set').split()
-user2 = os.environ.get('user2','Specified Environment Variable Not Set').split()
-user3 = os.environ.get('user3','Specified Environment Variable Not Set').split()
+user1 = os.environ.get('user1','Specified Environment Variable Not Set').split(',')
+user2 = os.environ.get('user2','Specified Environment Variable Not Set').split(',')
+user3 = os.environ.get('user3','Specified Environment Variable Not Set').split(',')
 accounts_to_check = [user1, user2, user3] #store accounts as a list
 #name of the big query table
 table_id = os.environ.get('bqtableid','Specified Environment Variable Not Set')
