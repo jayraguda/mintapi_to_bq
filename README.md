@@ -21,67 +21,67 @@ Here is a sample schema (copy and paste into Bigquery)
         "description": "Timestamp of when this partition was delivered from Mint to Bigquery",
         "name": "partitiontime",
         "type": "TIMESTAMP",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "Date of Transaction",
         "name": "date",
         "type": "DATE",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "Changed Description of Transaction (edited in Mint)",
         "name": "description",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "Original description of transaction.",
         "name": "original_description",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "amount",
         "name": "amount",
         "type": "FLOAT",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "debit or credit",
         "name": "transaction_type",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "category selected",
         "name": "category",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "name of the account",
         "name": "account_name",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "any labels (space delimited)",
         "name": "labels",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "any notes",
         "name": "notes",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       },
       {
         "description": "if pulling multiple accounts into this bigquery table, username",
         "name" : "account",
         "type": "STRING",
-        "mode" : NULLABLE
+        "mode" : "NULLABLE"
       }
 ]
   ```
