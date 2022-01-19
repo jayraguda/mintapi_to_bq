@@ -1,6 +1,6 @@
 # mintapi_to_bq
 
-A Docker Image for Google Cloud Run that pulls transactions into Google Cloud's petabyte datawarehouse: BigQuery
+A Docker Image for Google Cloud Run that pulls transactions into Google Cloud's petabyte datawarehouse: BigQuery. This uses [mintapi](https://github.com/mintapi/mintapi), a Mint-scraping library to capture the transaction data from Mint.com.
 
 ## Preqrequisites
 
