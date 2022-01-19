@@ -1,17 +1,17 @@
 # mintapi_to_bq
 
-Docker Image for Google Cloud Run that pulls transactions into Google Cloud's petabyte datawarehouse: BigQuery
+A Docker Image for Google Cloud Run that pulls transactions into Google Cloud's petabyte datawarehouse: BigQuery
 
-# Preqrequisites
+## Preqrequisites
 
 Prior to deploying this into a container in Google Cloud run, you must configure the following:
 
-## 1. BigQuery
+### 1. BigQuery
 
 You'll need to set up a bigquery table inside a working project in Google Cloud Services. It's best to set up the table inside the same project the script will be running from (otherwise you will need to customize and configure permissions between projects)
 
 
-### Bigquery Table and Schema
+#### Bigquery Table and Schema
 The easiest way to do this is through the [bigquery console](https://cloud.google.com/bigquery/docs/tables#console). 
 
 Here is a sample schema:
@@ -88,6 +88,6 @@ Here is a sample schema:
 
   Store the entire table name (eg. `projectname.datasetname.tablename`) in the container environment variable as `bqtableid`.
 
-  ## 2. SMTP access to Email accounts for MFA
+  ### 2. SMTP access to Email accounts for MFA
 
   As referenced in mintapi [README.md](https://github.com/mintapi/mintapi#readme)
