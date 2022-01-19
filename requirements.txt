@@ -1,0 +1,18 @@
+# https://pypi.org/project/flask
+Flask
+
+# https://pypi.org/project/gunicorn
+gunicorn
+
+# https://pypi.org/project/mintapi
+mintapi
+#smtplib
+#email.mime.multipart
+#email.mime.multipart
+#email.mime.application
+#email.mime.text
+#datetime
+pytz
+pyarrow
+google-cloud-bigquery
+google-cloud
