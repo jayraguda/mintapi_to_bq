@@ -1,4 +1,4 @@
-# this is a version of this base docker file https://github.com/atkaiser/docker-mintapi-base
+# this is a version of this base docker file docker-mintapi-base by atkaiser - https://github.com/atkaiser/docker-mintapi-base
 FROM python:3.10
 
 # Allow statements and log messages to immediately appear in the Knative logs

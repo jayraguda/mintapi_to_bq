@@ -115,4 +115,4 @@ Here is a sample schema (copy and paste into Bigquery)
 - **Value** : projectname.datasetname.table
 
 ### Scheduling through Google Cloud Scheduler
-Use [Google Cloud Scheduler](https://cloud.google.com/scheduler/docs/quickstart) to trigger Chron Jobs to send a GET command to the service URL provided on deploy.
+Use [Google Cloud Scheduler](https://cloud.google.com/scheduler/docs/quickstart) to trigger Chron Jobs to send a GET command to the service URL provided on deploy. You'll need to make sure to up the timeout time to be >3 minutes (default), otherwise Scheduler will terminate the request even though there is no error.
